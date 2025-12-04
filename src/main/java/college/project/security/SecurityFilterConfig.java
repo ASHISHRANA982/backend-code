@@ -70,7 +70,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(List.of("http://localhost:5173", "https://my-frontend.vercel.app"));
+        config.setAllowedOrigins(List.of("http://localhost:5173", "https://kartavya-bloodbank.vercel.app/"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         source.registerCorsConfiguration("/**", config);
